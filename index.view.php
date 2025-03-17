@@ -2,22 +2,17 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Demo</title>
 </head>
 
 <body>
-    <h1>Recommended Books</h1>
-    
+    <h1><?= $business['name']; ?></h1>
 
     <ul>
-        <?php foreach ($filteredBooks as $item) : ?>
-            <li>
-                <a href="<?= $item['purchaseURL'] ?>">
-                    <?= $item['name'] ?> (<?= $item['releaseYear'] ?>)
-                    - By <?= $item['author'] ?>
-                </a>
-            </li>
-        <?php endforeach ?>
+        <?php foreach ($business['categories'] as $category) : ?>
+            <li><?= $category; ?></li>
+        <?php endforeach; ?>
     </ul>
 </body>
 

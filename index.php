@@ -1,34 +1,17 @@
 <?php
 
-$books = [
-    [
-        'name' => 'Do Androids Dream of Electric Sheep',
-        'author' => 'Philip K. Dick',
-        'releaseYear' => 1968,
-        'purchaseURL' => 'http://example.com'
-    ],
-    [
-        'name' => 'The Langoliers',
-        'author' => 'Stephen King',
-        'releaseYear' => 1990,
-        'purchaseURL' => 'http://example.com'
-    ],
-    [
-        'name' => 'Project Hail Mary',
-        'author' => 'Andy Weir',
-        'releaseYear' => 2021,
-        'purchaseURL' => 'http://example.com'
-    ],
-    [
-        'name' => 'The Martian',
-        'author' => 'Andy Weir',
-        'releaseYear' => 2011,
-        'purchaseURL' => 'http://example.com'
-    ]
-];    
+$business = [
+    'name' => 'Metal Gears Co.',
+    'cost' => 10000,
+    'categories' => ['industrial', 'widgets', 'sprockets']
+];
 
-$filteredBooks = array_filter($books, function ($book) { 
-    return $book['releaseYear'] < 2000;
-});
+function register($user)
+{
+    // create the user record in the db.
+    // log them in.
+    // send them a welcome email.
+    // redirect to their new dashboard.
+}
 
 require "index.view.php";
